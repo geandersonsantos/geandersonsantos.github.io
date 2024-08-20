@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,11 +11,13 @@
 :root{
     --cl: #001a30;
     --fonte-wt: #fff;
+    --fonte: "Roboto", sans-serif;
 }
 
 body{
     background-color: var(--cl);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte);
+    font-weight: normal;
 }
 
 #content{
@@ -20,34 +26,58 @@ body{
     width: 300px;
     margin: auto;
 }
+#content > p{
+    margin-top: 20px;
+}
 .img{
     border-radius: 225px;
     border: 2px solid var(--fonte-wt);
     width: 100px;
     height: 100px;
     margin-top: 30px;
+    margin-bottom: 10px;
 }
 #content > h1{
     color: var(--fonte-wt);
     font-size: 14px;
+    font-weight: bold;
 }
 #links{
     margin-top: 30px;
+    margin: auto;
 }
 #links > a{
-    margin: 10px auto 10px auto;
-    width: 200px;
+    margin-top: 20px;
+    height: 40px;
     display: block;
-    font-size: 30px;
+    padding-top: 11px;
+    font-size: 20px;
+    font-weight: 500;
     color: var(--fonte-wt);
+    border: 1px solid #ffffff4d;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#links > a:hover {
+    background-color: rgba(255, 255, 255, 0.24);
+    transition: 0.5s;
+    color: #ffffffc2;
+}
+#links a span{
+    font-size: 0.6em;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
 }
 footer{
     text-align: center;
     color: var(--fonte-wt);
     font-size: 14px;
-    padding-top: 10px;
+    margin-top: 80px;
 }
 footer p > a{
-    text-decoration: none;
-    color: var(--fonte-wt);
+    color: rgba(210, 105, 30, 0.801);
 }

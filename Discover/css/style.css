@@ -1,0 +1,138 @@
+/*Author: Geanderson*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color1: #2d4a22;
+    --color2: #363f5f;
+    --color3: #49aa26;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: normal;
+    font-style: normal;
+    background-color: #f0f2f5;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    transition: width 0.4s, height 0.4s;
+    transition-timing-function: ease;
+}
+
+h2 {
+    margin-top: 51.2px;
+    margin-bottom: 12.8px;
+    color: var(--color2);
+    font-weight: normal;
+}
+
+.money-in::after {
+    content: 'R$';
+}
+
+.money-out::after {
+    content: '-R$';
+}
+
+header {
+    background-color: var(--color1);
+    padding: 32px 0px 160px 0px;
+    text-align: center;
+}
+
+header>h1#logo {
+    color: #ffffff;
+    font-weight: 100;
+}
+
+/*Content main*/
+
+#balance {
+    margin-top: -128px;
+}
+
+#balance>h2 {
+    color: #ffffff;
+    margin-top: 0px;
+}
+
+.cards {
+    background-color: #ffffff;
+    padding: 24px 32px;
+    border-radius: 4px;
+    margin-bottom: 32px;
+    color: var(--color2);
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.cards>h3 {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.cards>p {
+    font-size: 2em;
+}
+
+.cards.total {
+    background-color: var(--color3);
+    color: #ffffff;
+}
+
+/**/
+
+#data-table {
+    width: 100%;
+    border-spacing: 0 0.5em;
+    color: #969cb3;
+}
+
+table thead tr th:first-child,
+table tbody tr td:first-child {
+    border-radius: 4px 0px 0px 4px;
+}
+
+table th {
+    background-color: #ffffff;
+    font-weight: 400;
+    padding: 16px 32px;
+    text-align: left;
+}
+
+table tbody tr {
+    opacity: 0.7;
+}
+
+table tbody tr:hover {
+    opacity: 1;
+}
+
+table td {
+    background-color: #ffffff;
+    padding: 16px 32px;
+}
+
+td.description{
+    color: var(--color2);
+}
+td.income{
+    color: #12a454;
+}
+td.expense{
+    color: #e92929;
+}
+/*Content footer*/
+footer {
+    text-align: center;
+    padding: 64px 32px;
+    color: var(--color2);
+    opacity: 0.6;
+}

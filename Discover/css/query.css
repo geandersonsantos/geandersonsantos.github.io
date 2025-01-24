@@ -1,17 +1,9 @@
-@media screen and (orientation: landscape) {
+@media screen and (min-width: 380px) and (max-width: 768px){
     .container {
         width: 90vw;
     }
     #data-table{
-        width: 90vw;
-    }
-}
-@media screen and (min-width: 280px) and (max-width: 768px){
-    .container {
-        width: 90vw;
-    }
-    #data-table{
-        width: 90vw;
+        width: 80vw;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 992px){

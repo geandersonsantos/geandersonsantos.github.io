@@ -27,11 +27,39 @@ body {
     transition-timing-function: ease;
 }
 
+.sr-only {
+    /*esconder caixa na tela sem retira-la para leitores de tela. OBS: Display none tira*/
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0px;
+    /*css-tricks.com*/
+}
+
 h2 {
     margin-top: 51.2px;
     margin-bottom: 12.8px;
     color: var(--color2);
     font-weight: normal;
+}
+
+a {
+    color: var(--color3);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3dd705;
+}
+
+.btn.new {
+    display: inline-block;
+    margin-bottom: 12px;
 }
 
 .money-in::after {
@@ -74,6 +102,9 @@ header>h1#logo {
 }
 
 .cards>h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-weight: 400;
     font-size: 1em;
 }
@@ -87,8 +118,12 @@ header>h1#logo {
     color: #ffffff;
 }
 
-/**/
-
+/*seção 2*/
+#transaction{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
 #data-table {
     width: 100%;
     border-spacing: 0 0.5em;
@@ -98,6 +133,11 @@ header>h1#logo {
 table thead tr th:first-child,
 table tbody tr td:first-child {
     border-radius: 4px 0px 0px 4px;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child {
+    border-radius: 0px 4px 4px 0px;
 }
 
 table th {
@@ -120,15 +160,18 @@ table td {
     padding: 16px 32px;
 }
 
-td.description{
+td.description {
     color: var(--color2);
 }
-td.income{
+
+td.income {
     color: #12a454;
 }
-td.expense{
+
+td.expense {
     color: #e92929;
 }
+
 /*Content footer*/
 footer {
     text-align: center;

@@ -1,16 +1,27 @@
-@media screen and (min-width: 380px) and (max-width: 768px){
+/*Telas Menores - Phones*/
+@media screen {
     .container {
         width: 90vw;
-    }
-    #data-table{
-        width: 80vw;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 992px){
-    .container {
-        width: 90vw;
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 87.5%;
     }
-    #data-table{
-        width: 90vw;
+}
+
+/*Telas Medias - Tablets*/
+@media screen and (min-width: 600px) {
+    #balance {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 32px;
+    }
+}
+/*Telas Grandes*/
+@media screen and (min-width: 600px) and (max-width: 768px){
+    #balance {
+        font-size: 70%;
     }
 }

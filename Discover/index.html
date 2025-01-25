@@ -12,42 +12,53 @@
 <body>
 
     <header>
-        <h1 id="logo">dev.finance$</h1>
+        <img src="./assets/logo.svg" alt="Logo Dev  Finance">
     </header>
 
     <main class="container">
         <section id="balance">
-            <h2>Balanços</h2>
+            <h2 class="sr-only">Balanços</h2>
 
             <div class="cards">
-                <h3>Entradas</h3>
+                <h3>
+                    <span>Entradas</span>
+                    <img src="./assets/income.svg" alt="Imagem de Entrada de Dinheiro ">
+                </h3>
                 <p> <span class="money-in"></span> 5.000,00</p>
             </div>
 
             <div class="cards">
-                <h3>Saídas</h3>
+                <h3>
+                    <span>Saídas</span>
+                    <img src="./assets/expense.svg" alt="Imagem de Total">
+                </h3>
                 <p> <span class="money-out"></span> 2.000,00</p>
             </div>
-                
+
             <div class="cards total">
-                <h3>Total</h3>
+                <h3> <span>Total</span>
+                    <img src="./assets/total.svg" alt="Imagem de Total de Dinheiro ">
+                </h3>
                 <p> <span class="money-in"></span> 3.000,00</p>
             </div>
-            
 
-            
+
+
         </section>
 
 
         <section id="transaction">
-            <h2>Transações</h2>
+            <h2 class="sr-only">Transações</h2>
 
+            <a href="#" class="btn new" target="_self">+ Nova Transação</a>
             <table id="data-table">
+
                 <thead>
                     <tr>
                         <th>Descrição</th>
                         <th>Valor</th>
                         <th>Data</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -55,16 +66,25 @@
                         <td class="description">Luz</td>
                         <td class="expense"><span class="money-out"></span> 500,00</td>
                         <td class="date">23/01/2021</td>
+                        <td>
+                            <img src="./assets/minus.svg" alt="Remover Transação">
+                        </td>
                     </tr>
                     <tr>
                         <td class="description">Criação website</td>
                         <td class="income"><span class="money-in"></span> 5000,00</td>
                         <td class="date">23/01/2021</td>
+                        <td>
+                            <img src="./assets/minus.svg" alt="Remover Transação">
+                        </td>
                     </tr>
                     <tr>
                         <td class="description">Internet</td>
                         <td class="expense"><span class="money-out"></span> 200,00</td>
                         <td class="date">23/01/2021</td>
+                        <td>
+                            <img src="./assets/minus.svg" alt="Remover Transação">
+                        </td>
                     </tr>
                 </tbody>
             </table>

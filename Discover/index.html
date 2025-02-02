@@ -4,7 +4,9 @@
 <head><!--Meta dados referente a este arquivo contem info complementares-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dev.finance$</title>
+    <meta name="description" content="Uma aplicacao de financas para devs">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/query.css">
 </head>
@@ -93,10 +95,40 @@
 
     </main>
 
-
     <footer>
         <p>Dev.finance$</p>
     </footer>
+
+    <div class="modal-overlay active">
+        <div class="modal">
+            <div id="form">
+                <h2>Nova Transação</h2>
+                <form action="">
+                    <div class="input-group">
+                        <label for="description" class="sr-only">Descrição</label>
+                        <input type="text" name="description" id="description" placeholder="Descrição" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="amount" class="sr-only">Valor</label>
+                        <input type="number" name="amount" id="amount" placeholder="0,00" step="0.01" required>
+                        <small>Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="date" class="sr-only">Data</label>
+                        <input type="date" name="date" id="date" placeholder="Data" required>
+                    </div>
+
+                    <div class="input-group actions">
+                        <a href="#" class="button cancel">Cancelar</a>
+                        <button type="submit">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>

@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font: 400 1em 'DM Sans', sans-serif;
+    /*get style external - fonts google*/
+    background-color: var(--bd-col);
+    color: var(--txt-col);
+}
+
+header {
+    display: flex;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    height: 4.5em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font: normal 700 1.875em "Poppins", serif;
+    color: var(--tt-col);
+
+}
+
+.btn {
+    background-color: var(--col-bs);
+    color: var(--bd-col);
+    height: 3.5em;
+    display: inline-flex;
+    align-items: center;
+    padding: 0px 2em;
+    border-radius: 4px;
+    font: normal 500 1em "DM Sans", sans-serif;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--col-alt);
+}
+
+.divider-1{
+    height: 1px;
+    background: linear-gradient(270deg, hsla(159, 36%, 57%, 1) 0%, 
+    hsla(159, 65%, 88%, 0.34) 100% );
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    font: normal 700 1.31em "Poppins", serif;
+    color: var(--tt-col);
+}
+
+.logo>span {
+    color: var(--col-bs);
+}
+
+/*##### content main #####*/
+.container {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.grid {
+    display: grid;
+    gap: 2em;
+}
+
+.section {
+    padding: 5em 0px;
+}
+#home{
+    overflow: hidden;
+}
+#home>.container {
+    margin: 0px;
+}
+
+#home .image {
+    position: relative;
+}
+
+#home .image::before {
+    /*content fantasma*/
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: var(--col1);
+    position: absolute;
+    top: -16.8%;
+    left: 16.8%;
+    z-index: 0;
+    /*é habilitado com position*/
+}
+
+#home .image img {
+    position: relative;
+    right: 2.93em;
+}
+
+#home .image img,
+#home .image::before {
+    border-radius: 4px;
+}
+
+#home .text {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    text-align: center;
+}
+
+#home .text h1 {
+    margin-bottom: 1em;
+}
+
+#home .text p {
+    margin-bottom: 1em;
+}

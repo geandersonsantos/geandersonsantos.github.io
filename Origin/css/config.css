@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root{
+    --col-bs: #6ab99d;
+    --col1: #cdf4e6;
+    --col-alt: #43cb9c;
+    --bd-col: #fafafa;
+    --txt-col: #757575;
+    --tt-col: #0f241d;
+}
